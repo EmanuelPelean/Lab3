@@ -14,23 +14,18 @@ public class Home {
 
 			System.out.println("Please enter an integer: ");
 
-			userVal = scan.nextInt();
+			userVal = Math.abs(scan.nextInt());
 
-			System.out.printf("%-10s", "Number");
-			System.out.printf("%-10s", "Squared");
-			System.out.printf("%-10s", "Cubed");
+			System.out.printf("%-10s %-10s %-10s","Number", "Squared", "Cubed");
 			System.out.println();
-			System.out.printf("%-10s", "=======");
-			System.out.printf("%-10s", "=======");
-			System.out.printf("%-10s", "=======");
 			
+			
+			System.out.printf("%-10s %-10s %-10s","=======", "=======", "=======");
 			System.out.println();
 
 			for (int i = userVal; i > 0; i--) {
 				
-				System.out.printf("%-10s", numberDisplay(userVal));
-				System.out.printf("%-10s", squaredDisplay(value));
-				System.out.printf("%-10s", cubedDisplay(value));
+				System.out.printf("%-10s %-10s %-10s",numberDisplay(userVal), squaredDisplay(value), cubedDisplay(value));
 				System.out.println();
 
 			}
